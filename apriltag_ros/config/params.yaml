@@ -14,8 +14,8 @@
     publish_tf:        true       # default: false
     transport_hint:    "raw"      # default: raw, see http://wiki.ros.org/image_transport#Known_Transport_Packages for options
     publish_tag_detections_image: true
-    image_topic: "Camera/image_raw"
+    image_topic: "camera/image_raw"
     queue_size: 1
     tag_detections_topic: "tag_detections"
     tag_detections_image_topic: "tag_detections_image"
-    remove_dupicates: true
+    remove_duplicates: true
