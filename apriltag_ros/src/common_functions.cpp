@@ -463,7 +463,7 @@ apriltag_ros_interfaces::msg::AprilTagDetectionArray TagDetector::detectTags (
             tag_transform.transform.rotation.z = pose.pose.orientation.z;
             tag_transform.transform.rotation.w = pose.pose.orientation.w;
 
-            tag_transform.child_frame_id = std::to_string(tag_detection_array.detections[i].id[0]);
+            tag_transform.child_frame_id = detection_names[i]; //std::to_string(tag_detection_array.detections[i].id[0]);
 
             tag_transform.header = pose.header;
 
