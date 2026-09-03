@@ -18,6 +18,7 @@ endif()
 # Find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(ament_index_cpp REQUIRED)
 find_package(rclcpp_components REQUIRED)
 find_package(apriltag_ros_interfaces REQUIRED)
 find_package(cv_bridge REQUIRED)
@@ -37,6 +38,7 @@ find_package(image_geometry REQUIRED)
 set(dependencies
   rclcpp
   rclcpp_components
+  ament_index_cpp
   apriltag_ros_interfaces
   cv_bridge
   image_transport
@@ -74,6 +76,7 @@ target_compile_definitions(${PROJECT_NAME}
 ament_target_dependencies(${PROJECT_NAME}
                           rclcpp
                           rclcpp_components
+                          ament_index_cpp
                           apriltag_ros_interfaces
                           cv_bridge
                           image_transport

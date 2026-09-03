@@ -30,7 +30,7 @@
  */
 
 #include "apriltag_ros/common_functions.hpp"
-#include "image_geometry/pinhole_camera_model.h"
+#include "image_geometry/pinhole_camera_model.hpp"
 
 #include "apriltag/common/homography.h"
 #include "apriltag/tagStandard52h13.h"
